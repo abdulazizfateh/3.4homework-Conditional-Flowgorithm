@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="abdulaziz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-18 05:09:51 PM"/>
+        <attribute name="created" value="YWJkdWxheml6O0FCRFVMQVpJWlMtTUFDQjsyMDI1LTAyLTE4OzA1OjAwOjA2IFBNOzMzMjI="/>
+        <attribute name="edited" value="YWJkdWxheml6O0FCRFVMQVpJWlMtTUFDQjsyMDI1LTAyLTE4OzA1OjA5OjUxIFBNOzE7MzQzOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, count" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter a number&quot;" newline="True"/>
+            <input variable="num"/>
+            <for variable="count" start="1" end="10" direction="inc" step="1">
+                <output expression="count &amp; &quot; x &quot; &amp; num &amp; &quot; = &quot; &amp; count * num" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

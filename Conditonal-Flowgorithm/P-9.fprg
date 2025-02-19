@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="abdulaziz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-18 03:39:02 PM"/>
+        <attribute name="created" value="YWJkdWxheml6O0FCRFVMQVpJWlMtTUFDQjsyMDI1LTAyLTE4OzAzOjE1OjM2IFBNOzMzMjk="/>
+        <attribute name="edited" value="YWJkdWxheml6O0FCRFVMQVpJWlMtTUFDQjsyMDI1LTAyLTE4OzAzOjM5OjAyIFBNOzE7MzQzNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="Real" array="False" size=""/>
+            <assign variable="c" expression="0"/>
+            <output expression="&quot;A sonini kiriting&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;B sonini kiriting&quot;" newline="True"/>
+            <input variable="b"/>
+            <if expression="a == b">
+                <then>
+                    <output expression="&quot;A = &quot; &amp; a" newline="True"/>
+                    <output expression="&quot;B  = &quot; &amp; b" newline="True"/>
+                    <output expression="&quot;A = B&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="a &gt; b">
+                        <then>
+                            <assign variable="c" expression="a"/>
+                            <assign variable="a" expression="b"/>
+                            <assign variable="b" expression="c"/>
+                            <output expression="&quot;A = &quot; &amp; a" newline="True"/>
+                            <output expression="&quot;B = &quot; &amp; b" newline="True"/>
+                            <output expression="&quot;B &gt; A&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;A = &quot; &amp; a" newline="True"/>
+                            <output expression="&quot;B = &quot; &amp; b" newline="True"/>
+                            <output expression="&quot;B &gt; A&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="abdulaziz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-18 04:21:49 PM"/>
+        <attribute name="created" value="YWJkdWxheml6O0FCRFVMQVpJWlMtTUFDQjsyMDI1LTAyLTE4OzA0OjEzOjMxIFBNOzMzMjM="/>
+        <attribute name="edited" value="YWJkdWxheml6O0FCRFVMQVpJWlMtTUFDQjsyMDI1LTAyLTE4OzA0OjIxOjQ5IFBNOzE7MzQzOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, count, sum" type="Real" array="False" size=""/>
+            <assign variable="sum" expression="0"/>
+            <output expression="&quot;Enter a num&quot;" newline="True"/>
+            <input variable="num"/>
+            <for variable="count" start="1" end="num" direction="inc" step="1">
+                <assign variable="sum" expression="sum + count"/>
+            </for>
+            <output expression="sum &amp; &quot; is the sum of all numbers until &quot; &amp; num" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

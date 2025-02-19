@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="abdulaziz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-17 09:16:32 PM"/>
+        <attribute name="created" value="YWJkdWxheml6O0FCRFVMQVpJWlMtTUFDQjsyMDI1LTAyLTE3OzA5OjAxOjUyIFBNOzMzMjc="/>
+        <attribute name="edited" value="YWJkdWxheml6O0FCRFVMQVpJWlMtTUFDQjsyMDI1LTAyLTE3OzA5OjE2OjMyIFBNOzE7MzQzOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2" type="Integer" array="False" size=""/>
+            <output expression="&quot;Birinchi sonni kiriting&quot;" newline="True"/>
+            <input variable="num1"/>
+            <output expression="&quot;Ikkinchi sonni kiriting&quot;" newline="True"/>
+            <input variable="num2"/>
+            <if expression="num1 &gt; num2">
+                <then>
+                    <output expression="&quot;2&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;1&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

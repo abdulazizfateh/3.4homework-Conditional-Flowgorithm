@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="abdulaziz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-17 08:41:37 PM"/>
+        <attribute name="created" value="YWJkdWxheml6O0FCRFVMQVpJWlMtTUFDQjsyMDI1LTAyLTE3OzA4OjMxOjMwIFBNOzMzMjU="/>
+        <attribute name="edited" value="YWJkdWxheml6O0FCRFVMQVpJWlMtTUFDQjsyMDI1LTAyLTE3OzA4OjQxOjM3IFBNOzE7MzQ0MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2, num3, positive" type="Real" array="False" size=""/>
+            <assign variable="positive" expression="0"/>
+            <output expression="&quot;Birinchi sonni kiriting&quot;" newline="True"/>
+            <input variable="num1"/>
+            <output expression="&quot;Ikkinchi sonni kiriting&quot;" newline="True"/>
+            <input variable="num2"/>
+            <output expression="&quot;Uchinchi sonni kiriting&quot;" newline="True"/>
+            <input variable="num3"/>
+            <if expression="num1 &gt; 0">
+                <then>
+                    <assign variable="positive" expression="positive + 1"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="num2 &gt; 0">
+                <then>
+                    <assign variable="positive" expression="positive + 1"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="num3 &gt; 0">
+                <then>
+                    <assign variable="positive" expression="positive + 1"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="positive == 0">
+                <then>
+                    <output expression="&quot;Kiritilgan sonlarning barchasi manfiy&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="positive == 3">
+                        <then>
+                            <output expression="&quot;Kiritilgan sonlarning barchasi musbat&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Kiritilgan sonlardan &quot; &amp; positive &amp; &quot; tasi musbat&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

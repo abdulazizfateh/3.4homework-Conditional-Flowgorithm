@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="abdulaziz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-18 03:15:33 PM"/>
+        <attribute name="created" value="YWJkdWxheml6O0FCRFVMQVpJWlMtTUFDQjsyMDI1LTAyLTE4OzAzOjA3OjQ5IFBNOzMzMzQ="/>
+        <attribute name="edited" value="YWJkdWxheml6O0FCRFVMQVpJWlMtTUFDQjsyMDI1LTAyLTE4OzAzOjE1OjMzIFBNOzE7MzQzNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2" type="Integer" array="False" size=""/>
+            <output expression="&quot;Birinchi sonni kiriting&quot;" newline="True"/>
+            <input variable="num1"/>
+            <output expression="&quot;Ikkinchi sonni kiriting&quot;" newline="True"/>
+            <input variable="num2"/>
+            <if expression="num1 == num2">
+                <then>
+                    <output expression="num1 &amp;  &quot; =  &quot; &amp; num2" newline="True"/>
+                </then>
+                <else>
+                    <if expression="num1 &gt; num2">
+                        <then>
+                            <output expression="num1" newline="True"/>
+                            <output expression="num2" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="num2" newline="True"/>
+                            <output expression="num1" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

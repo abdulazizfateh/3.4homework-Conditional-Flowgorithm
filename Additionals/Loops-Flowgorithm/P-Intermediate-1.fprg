@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="abdulaziz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-18 04:59:54 PM"/>
+        <attribute name="created" value="YWJkdWxheml6O0FCRFVMQVpJWlMtTUFDQjsyMDI1LTAyLTE4OzA0OjUxOjM4IFBNOzMzMzI="/>
+        <attribute name="edited" value="YWJkdWxheml6O0FCRFVMQVpJWlMtTUFDQjsyMDI1LTAyLTE4OzA0OjU5OjU0IFBNOzE7MzQ0Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, count, evenNums" type="Integer" array="False" size=""/>
+            <assign variable="evenNums" expression="0"/>
+            <output expression="&quot;Enter a number&quot;" newline="True"/>
+            <input variable="num"/>
+            <for variable="count" start="1" end="num" direction="inc" step="1">
+                <if expression="count % 3 == 0">
+                    <then>
+                        <assign variable="evenNums" expression="evenNums + 1"/>
+                        <output expression="count" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;Total three-divisible numbers: &quot; &amp; evenNums" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
